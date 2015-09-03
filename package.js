@@ -1,7 +1,7 @@
 Package.describe({
   name: "admithub:admithub-styles",
   summary: "Common styles for AdmitHub sites",
-  version: "0.0.1",
+  version: "0.0.2",
   git: "https://github.com/AdmitHub/admithub-styles.git"
 });
 
@@ -54,5 +54,10 @@ Package.onUse(function(api) {
 
   api.addFiles('client/css/pages/sign-in.import.styl', 'client');
   api.addFiles('client/css/pages/bot.import.styl', 'client');
+
+  api.addFiles('public/icons/fonts/icons.eot');
+  api.addFiles('public/icons/fonts/icons.svg');
+  api.addFiles('public/icons/fonts/icons.ttf');
+  api.addFiles('public/icons/fonts/icons.woff');
 
 });
