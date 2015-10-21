@@ -1,7 +1,7 @@
 Package.describe({
   name: "admithub:admithub-styles",
   summary: "Common styles for AdmitHub sites",
-  version: "0.0.1",
+  version: "0.0.2",
   git: "https://github.com/AdmitHub/admithub-styles.git"
 });
 
@@ -59,6 +59,5 @@ Package.onUse(function(api) {
   api.addAssets('public/icons/fonts/icons.svg', 'client');
   api.addAssets('public/icons/fonts/icons.ttf', 'client');
   api.addAssets('public/icons/fonts/icons.woff', 'client');
-
 
 });
