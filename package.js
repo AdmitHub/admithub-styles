@@ -55,4 +55,10 @@ Package.onUse(function(api) {
   api.addFiles('client/css/pages/sign-in.import.styl', 'client');
   api.addFiles('client/css/pages/bot.import.styl', 'client');
 
+  api.addAssets('public/icons/fonts/icons.eot', 'client');
+  api.addAssets('public/icons/fonts/icons.svg', 'client');
+  api.addAssets('public/icons/fonts/icons.ttf', 'client');
+  api.addAssets('public/icons/fonts/icons.woff', 'client');
+
+
 });
