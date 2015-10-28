@@ -1,35 +1,35 @@
 .mod-dropdown-trigger
-  position relative
+  position: relative
   &:hover
     .mod-dropdown
-      display block
+      display: block
 
-.g-header-nav .mod-dropdown 
+.g-header-nav .mod-dropdown
 .mod-dropdown
-  display none
-  position absolute
-  right 0
-  top 100%
-  background-color color-white
-  min-width mod-dropdown-width
+  display: none
+  position: absolute
+  right: 0
+  top: 100%
+  background-color: color-light
+  min-width: mod-dropdown-width
   ui-border-radius()
-  text-align left
-  border border
-  z-index 1
-  border 0
+  text-align: left
+  border: border
+  z-index: 1
+  border: 0
   border-bottom-left-radius 2px
   border-bottom-right-radius 2px
 
   a
-    color color-link 
+    color: color-link
 
   li
     @media mq-med
-      margin 0 
+      margin: 0
 
   li:last-child
     {class-list-header-links}
-      border-bottom 0
+      border-bottom: 0
     a
       border-bottom-left-radius 2px
       border-bottom-right-radius 2px
@@ -41,12 +41,13 @@
 
 .mod-dropdown-text-link-list
   a
-    color color-link
-    display block
-    padding 1rem
-    type-xsmall()
-    border-bottom border
+    @extend .type-xsmall
+    color: color-link
+    display: block
+    padding: 1rem
+    border-bottom: border
     transition-property none
 
     &:hover
-      background-color color-border
+      background-color: color-brand
+      color: color-type-light !important
