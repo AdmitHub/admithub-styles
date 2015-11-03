@@ -12,13 +12,13 @@
   background-color: hero-mask
   z-index: 1
 
-.g-header-nav-bar, .g-header-region
+.g-header-nav-bar,
+.g-header-region
   position: relative
   z-index: 2
 
 .g-header-nav-bar
   z-index: 3
-  border-bottom: 1px solid rgba(255,255,255,0.25)
 
 .g-header
   @extend .clearfix
@@ -263,7 +263,8 @@ input.g-header-search-input
 
   .header-link
     @extend .type-sans
-    color: color-light
+    color: color-brand
+    font-weight: bold
     text-transform: uppercase
     line-height: 1em
     vertical-align: text-bottom
