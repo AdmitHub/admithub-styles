@@ -42,17 +42,15 @@ Package.onUse(function(api) {
   api.addFiles('client/css/modules/alerts.import.styl', 'client');
   api.addFiles('client/css/modules/progress-bar.import.styl', 'client');
   api.addFiles('client/css/modules/common.import.styl', 'client');
+  api.addFiles('client/css/modules/sign-in.import.styl', 'client');
+  api.addFiles('client/css/modules/bot.import.styl', 'client');
 
   api.addFiles('client/css/global/header.import.styl', 'client');
   api.addFiles('client/css/global/footer.import.styl', 'client');
   api.addFiles('client/css/global/content.import.styl', 'client');
 
-  api.addFiles('client/css/pages/sign-in.import.styl', 'client');
-  api.addFiles('client/css/pages/bot.import.styl', 'client');
-
   api.addAssets('public/icons/fonts/icons.eot', 'client');
   api.addAssets('public/icons/fonts/icons.svg', 'client');
   api.addAssets('public/icons/fonts/icons.ttf', 'client');
   api.addAssets('public/icons/fonts/icons.woff', 'client');
-
 });
