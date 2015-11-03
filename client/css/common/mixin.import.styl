@@ -194,3 +194,13 @@ ui-btn-color(background-color, type-color = color-light)
     color: type-color
     if background-color
       background-color: darken(background-color, 8)
+
+placeholder()
+  &::-webkit-input-placeholder
+    {block}
+  &:-moz-placeholder
+    {block}
+  &::-moz-placeholder
+    {block}
+  &:-ms-input-placeholder
+    {block}
