@@ -1,15 +1,12 @@
-.footer
-  margin-top: (space*6)
-  padding: 0
-  clear both
-
 .g-footer
-  padding: 0
+  @extend .type-sans
   @extend .type-small
   @extend .clearfix
+  padding: 1em 0
+  background: color-brand
+  margin-top: 2em
 
 .g-footer-links
-  padding: grid-gutter 0
   display: flex
   flex-wrap wrap
   justify-content space-between
@@ -17,20 +14,20 @@
     justify-content center
   .g-footer-link
     display: inline-block
-    padding: 1rem 0
-    color: color-brand
+    color: color-text-light
     text-transform: uppercase
+    margin-right: 2em
     @media mq-med-desk
       padding: 1rem 2rem
 
 .g-footer-copyright
-  background-color: color-brand-dark
-  color: white
+  background: color-brand
+  color: color-text-light
   p
-    @extend .type-serif
+    font-style: italic
     margin-bottom: 0
     line-height: grid-page-gutter
 
-
-.g-landing-footer
-  background-color: color-grey-xxlight
+.g-footer-links-social,
+.g-footer-links-company
+  column(6/12)
