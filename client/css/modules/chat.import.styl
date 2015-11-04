@@ -1,0 +1,64 @@
+.conversations
+  width: 90%
+  max-width: 40rem
+  margin: 0 auto
+
+  .chat-icon
+    position: absolute
+    left: -100%
+    bottom: 0
+
+// .conversations__container
+
+.conversations__input
+  width: 100%
+  text-align: right
+  color: color-brand-dark
+  background: rgba(color-bgr-light, 0.6)
+  border: solid 3px color-brand
+
+  +placeholder()
+    color: tint(color-brand-dark, 50%)
+    text-align: right
+    font-size: 0.8em
+    text-transform: uppercase
+    letter-spacing: 2px
+    font-weight: bold
+
+.conversations__msg
+  position: relative
+  padding: 0.5em 1em
+  background: color-brand-cool
+  border-radius: 2.2rem
+  margin-bottom: 0.5em
+  text-shadow: 0 1px 1px rgba(0,0,0, 0.25)
+  box-shadow: 0px 1px 1px rgba(0,0,0, 0.25)
+
+  &.conversations__msg--important
+    font-weight: bold
+
+  triangleWidth = 3px
+
+  &:after
+    content: ""
+    display: block
+    position: absolute
+    left: -(triangleWidth*2)
+    width: 0
+    height: 0
+    border-style: solid
+    border-width: 5px triangleWidth
+    border-color: transparent color-brand-cool color-brand-cool transparent
+
+  &:first-child
+    border-radius: 2.2rem 2.2rem 2.2rem 0
+    background-color: color-brand-cool
+    &:after
+      bottom: 0
+
+  &:last-child
+    border-radius: 0 2.2rem 2.2rem 2.2rem
+    background-color: color-brand-cool
+    &:after
+      top: 0
+      border-color: color-brand-cool color-brand-cool transparent transparent
