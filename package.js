@@ -45,6 +45,7 @@ Package.onUse(function(api) {
   api.addFiles('client/css/modules/sign-in.import.styl', 'client');
   api.addFiles('client/css/modules/bot.import.styl', 'client');
   api.addFiles('client/css/modules/chat.import.styl', 'client');
+  api.addFiles('client/css/modules/slick.import.styl', 'client');
 
   api.addFiles('client/css/global/header.import.styl', 'client');
   api.addFiles('client/css/global/footer.import.styl', 'client');
