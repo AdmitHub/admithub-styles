@@ -1,7 +1,7 @@
 .g-header-wrap
+  position: relative
   background-color: color-brand-dark
   background-size: cover
-  position: relative
 
 .g-header-overlay
   position: absolute
@@ -23,8 +23,6 @@
 .g-header
   @extend .clearfix
   @extend .type-serif
-  // height: g-header-height
-  padding: 0.5em
   text-align: right
   color: color-light
 
@@ -216,6 +214,7 @@ input.g-header-search-input
     &:hover
       .g-header-nav
         display: block
+        padding-bottom: 2em
 
     .g-header-user-menu
       margin-top: 0 !important
@@ -258,7 +257,6 @@ input.g-header-search-input
   margin: 0
   padding: g-header-height grid-page-gutter-mobile
   text-align: left
-  background-color: color-brand
   box-shadow: 0 0.1rem 0.5rem rgba(color-black, 0.15)
 
   .header-link
@@ -461,8 +459,8 @@ input.g-header-search-input
 
 .g-header-hamburger
   float: left
-  padding: 0 (grid-gutter/2)
-  margin-left: -(grid-gutter/2)
+  // padding: 0 grid-page-gutter-mobile
+  color: color-brand
 
   .icon-x
     position: absolute
