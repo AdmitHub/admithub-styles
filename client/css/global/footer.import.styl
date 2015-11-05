@@ -5,14 +5,21 @@
   padding: 1em 0
   background: color-brand
   margin-top: 2em
-
+  text-align: center
   @media mq-med
-    .g-footer-links-social
+    text-align: left
+
+  .g-footer-links-company
+    margin-bottom: 1em
+    @media mq-med
+      column(6/12)
+      margin-bottom: 0
+
+  .g-footer-links-social
+    @media mq-med
       column(6/12)
       text-align: right
 
-    .g-footer-links-company
-      column(6/12)
 
 .g-footer-link
   display: inline-block
@@ -31,4 +38,3 @@
     font-style: italic
     margin-bottom: 0
     line-height: grid-page-gutter
-
