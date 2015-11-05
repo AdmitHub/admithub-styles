@@ -3,10 +3,14 @@
   max-width: 40rem
   margin: 0 auto
 
+  avatarSize = 50px
   .chat-icon
+    display: none
     position: absolute
-    left: -100%
+    left: -(avatarSize + 10px)
     bottom: 0
+    @media mq-med
+      display: block
 
 // .conversations__container
 
@@ -15,7 +19,7 @@
   text-align: right
   color: color-brand-dark
   background: rgba(color-bgr-light, 0.6)
-  border: solid 3px color-brand
+  border: solid 3px color-brand !important
 
   +placeholder()
     color: tint(color-brand-dark, 50%)
