@@ -12,16 +12,27 @@
     @media mq-med
       display: block
 
-.conversations__container
+.conversations__container,
+.conversations__form
   position: relative
 
+.conversations__form
+  &:focus
+    .conversations__input
+      background: red !important
+
 .conversations__input
-  font-family: font-sans !important
+  position: relative
   width: 100%
+  font-family: font-sans !important
   text-align: right
   color: color-brand-dark
   background: rgba(color-bgr-light, 0.6)
   border: solid 3px color-brand !important
+  &:focus
+    padding-right: 3em !important
+    & + .conversations__submit
+      display: block
 
   +placeholder()
     font-family: font-sans
@@ -31,6 +42,23 @@
     text-transform: uppercase
     letter-spacing: 2px
     font-weight: bold
+
+.conversations__submit
+  display: none
+  position: absolute
+  right: 0
+  top: 0
+  background: none
+  border: none
+  font-size: 1.5em
+  padding-left: 0.75em
+  padding-right: 0.75em
+  color: color-brand
+  z-index: 10
+  cursor: pointer
+  &:hover
+    color: color-type-light
+    background-color: color-brand
 
 .conversations__msg
   position: relative
