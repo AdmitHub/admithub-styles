@@ -1,9 +1,7 @@
-.conversations
-  width: 90%
-  max-width: 40rem
-  margin: 0 auto
+avatarSize = 50px
+cornerRadius = 2.2rem
 
-  avatarSize = 50px
+.conversations
   .chat-icon
     display: none
     position: absolute
@@ -61,6 +59,7 @@
     background-color: color-brand
 
 .conversations__msg
+  @extend .type-sans
   position: relative
   padding: 0.5em 1em
   background: color-brand-cool
@@ -70,12 +69,13 @@
   box-shadow: 0px 1px 1px rgba(0,0,0, 0.25)
   border-radius: 2.2rem 2.2rem 2.2rem 0
   background-color: color-brand-cool
+  color: color-type-light
 
   &.conversations__msg--important
     font-weight: bold
 
-  triangleWidth = 3px
 
+  triangleWidth = 3px
   &:after
     content: ""
     display: block
@@ -88,12 +88,25 @@
     border-color: transparent color-brand-cool color-brand-cool transparent
     bottom: 0
 
-  &:last-child
-    border-radius: 0 2.2rem 2.2rem 2.2rem
-    background-color: color-brand-cool
+  // &:last-child
+  //   border-radius: 0 cornerRadius cornerRadius cornerRadius
+  //   background-color: color-brand-cool
+  //   &:after
+  //     top: 0
+  //     border-color: color-brand-cool color-brand-cool transparent transparent
+
+  &.conversations__msg--outbound
+    background: color-bgr-light
+    color: color-type
+    border-radius: cornerRadius cornerRadius 0 cornerRadius
+    box-shadow: none
+    border: solid 1px darken(color-bgr-light, 5)
+    text-shadow: none
     &:after
-      top: 0
-      border-color: color-brand-cool color-brand-cool transparent transparent
+      left: auto
+      right: -(triangleWidth*2)
+      bottom: 0
+      border-color: transparent transparent color-bgr-light color-bgr-light
 
   &.conversations__error
     background-color: color-red !important
