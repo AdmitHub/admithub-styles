@@ -1,8 +1,12 @@
 .g-header-wrap
-  position: relative
+  position: relative !important
   // background-color: color-brand-dark
   background-size: cover
   background-position: 50% 50%
+  z-index: 92
+
+.g-header-wrap.lower-z-index-hack
+  z-index: 80 !important
 
 .g-header-overlay
   position: absolute
