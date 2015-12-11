@@ -24,20 +24,23 @@ remify(value)
 .type-serif
   font-family: font-serif
 
+.type-mono
+  font-family: font-mono
+
 .type-xsmall
-  type-size(13)
+  type-size(12)
 
 .type-small
-  type-size(15, 1.5)
+  type-size(14, 1.5)
 
 .type-medium
-  type-size(18, 1.4)
+  type-size(16, 1.4)
 
 .type-large
-  type-size(24, 1.3)
+  type-size(20, 1.3)
 
 .type-xlarge
-  type-size(32, 1.3)
+  type-size(28, 1.3)
 
 .type-huge
   type-size(44, 1.2)
@@ -89,8 +92,9 @@ p
   @extend .type-serif
 
 h1, h2, h3, h4, h5, h6
-  @extend .type-serif
+  @extend .type-sans
   font-weight: bold
+  color color-brand
 
 h1
   @extend .type-huge
