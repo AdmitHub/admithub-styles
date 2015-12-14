@@ -35,6 +35,7 @@ Package.onUse(function(api) {
   api.addFiles('client/css/common/buttons.import.styl', 'client');
   api.addFiles('client/css/common/dropdown.import.styl', 'client');
   api.addFiles('client/css/common/autoform.import.styl', 'client');
+  api.addFiles('client/css/common/util.import.styl', 'client');
 
   api.addFiles('client/css/modules/section.import.styl', 'client');
   api.addFiles('client/css/modules/page.import.styl', 'client');
