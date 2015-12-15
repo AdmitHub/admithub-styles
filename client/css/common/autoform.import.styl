@@ -25,73 +25,27 @@ form
   .panel
     margin-bottom 2rem
 
-// .form-group {
-//   margin:20% auto 0 auto;
-//   padding:20px;
-//   width:60%;
-//   height:auto;
-//   overflow:hidden;
-//   background:#f9f9f9;
-// }
 
-// .form-group input,
-// .form-group label {
-//   display:inline-block;
-// }
+  // Checkboxes
 
-// .form-group .input-group {
-//   position:relative;
-// }
+  input[type='checkbox']
+    position relative
+    appearance none
+    background-color color-grey-light
+    border-radius 2px
+    width 1em
+    height 1em
+    vertical-align middle
 
-// .form-group input,
-// .form-group label {
-//   margin-right:20px;
-//   padding:20px 0;
-//   width:250px;
-//   font-family:georgia;
-//   font-size:18px;
-// }
-
-// .form-group input {
-//   outline:none;
-//   background:transparent;
-//   border:none;
-//   border-bottom:2px solid cornflowerblue;
-//   color:gray;
-// }
-
-// .form-group input[type="submit"] {
-//   padding:20px;
-//   width:auto;
-//   border:2px solid cornflowerblue;
-//   color:cornflowerblue;
-//   cursor:pointer;
-//   font-family:tahoma;
-// }
-
-// .form-group input[type="submit"]:hover {
-//   background:cornflowerblue;
-//   color:white;
-// }
-
-// .form-group label {
-//   position:absolute;
-//   top:50%;
-//   left:0;
-//   transform:translateY(-50%);
-//   pointer-events:none;
-//   font-style:italic;
-//   color:#bbb;
-//   transition:.2s ease all;
-// }
-
-// .form-group input:focus {
-//   border-color:lightgray;
-// }
-
-// .form-group input:focus ~ label,
-// .form-group input.has-value ~ label {
-//   top:0;
-//   font-size:12px;
-//   color:cornflowerblue;
-// }
+  input[type='checkbox']:checked
+    background-color color-active
+    &:before
+      position absolute
+      top 0.25em
+      left 0.15em
+      content ""
+      width 0.5em
+      height 0.2em
+      border-bottom 3px solid color-brand
+      border-left 3px solid color-brand
+      transform rotate(-45deg)
