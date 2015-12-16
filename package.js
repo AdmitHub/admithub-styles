@@ -33,7 +33,7 @@ Package.onUse(function(api) {
   api.addFiles('client/css/common/sidebar.import.styl', 'client');
   api.addFiles('client/css/common/responsive.import.styl', 'client');
   api.addFiles('client/css/common/buttons.import.styl', 'client');
-  api.addFiles('client/css/common/dropdown.import.styl', 'client');
+  api.addFiles('client/css/common/select.import.styl', 'client');
   api.addFiles('client/css/common/autoform.import.styl', 'client');
   api.addFiles('client/css/common/util.import.styl', 'client');
 
@@ -44,10 +44,8 @@ Package.onUse(function(api) {
   api.addFiles('client/css/modules/dropdown.import.styl', 'client');
   api.addFiles('client/css/modules/markdown.import.styl', 'client');
   api.addFiles('client/css/modules/alerts.import.styl', 'client');
-  api.addFiles('client/css/modules/progress-bar.import.styl', 'client');
   api.addFiles('client/css/modules/common.import.styl', 'client');
   api.addFiles('client/css/modules/sign-in.import.styl', 'client');
-  api.addFiles('client/css/modules/bot.import.styl', 'client');
   api.addFiles('client/css/modules/chat.import.styl', 'client');
   api.addFiles('client/css/modules/slick.import.styl', 'client');
 
