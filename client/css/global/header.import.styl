@@ -20,6 +20,8 @@
 
 .g-header-nav-bar
   z-index: 3
+  background-color white
+  border-bottom 4px solid color-brand
 
 .g-header
   @extend .clearfix
@@ -212,11 +214,10 @@ input.g-header-search-input
 .g-header-nav-wrap
   cursor pointer
   @media mq-med-desk
-    &:hover
-      .g-header-nav
-        display: block
-        padding-bottom: 2em
-        background-color: color-bgr-light
+    .g-header-nav.open-nav
+      display: block
+      padding-bottom: 2em
+      background-color: color-bgr-light
 
     .g-header-user-menu
       margin-top: 0 !important
@@ -558,3 +559,17 @@ input.g-header-search-input
 @media mq-med
   .g-header-center .title
     display: none
+
+
+.g-header-nav-wrap .g-header-user-menu .mod-dropdown a
+  @media only screen and (max-width: mq-med-width)
+    color color-brand
+    padding-bottom 2em
+    text-transform: uppercase
+    font-size 1.2em
+    &:hover
+      color color-brand-cool !important
+
+.g-header-nav .mod-dropdown-trigger
+  @media only screen and (max-width: 800px)
+    padding-top 1em
